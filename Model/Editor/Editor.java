@@ -175,7 +175,6 @@ public class Editor extends JFrame {
 
             public void splitWithSpaces() {
 
-                ArrayList<String> list = new ArrayList<>();
                 String categories;
                 categories = category.getText();
                 ArrayList<String> aList= new ArrayList(Arrays.asList(categories.split(",")));
@@ -198,8 +197,8 @@ public class Editor extends JFrame {
                     categoryCheck = false;    
                 }
                 categoryList = modValidCategories;
-                if (!list.isEmpty())
-                       categoriesAdded = true;
+                if(!modValidCategories.isEmpty())
+                    categoriesAdded = true;
 
             }
         });
